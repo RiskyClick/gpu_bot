@@ -8,8 +8,8 @@ def send_email():
     server = smtplib.SMTP("smtp.gmail.com" , 587)  # 587 = port number
     server.ehlo() # check the smtp connection 
     server.starttls()  # start the conection 
-    server.login("spamingdump@gmail.com" , "&gd8Q48xEl9f")  
-    server.sendmail("spamingdump@gmail.com" , "spamingdump@gmail.com" , "Go Get GPU")
+    server.login("email" , "pw")  
+    server.sendmail("email" , "email" , "Go Get GPU")
     server.close()
     print("email was sent") 
 
